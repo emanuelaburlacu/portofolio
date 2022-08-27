@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(231, 158, 138);
+  cursor: pointer;
+  z-index: 1;
+}
+nav ul li {
+  display: inline-block;
+  padding: 20px 30px 10px 30px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: rgb(81, 75, 75);
+}
+a:hover {
+  transition: 0.5s;
+  color: white;
+}
+h2 {
+  padding: 8px 10px 0.5px 10px;
+  color: white;
+  font-size: 2.3em;
+}
+span {
+  color: rgb(81, 75, 75);
+}
+.btn {
+  background-color: rgb(81, 75, 75);
+  color: white;
+  border: 5px solid transparent;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px 0px;
+  transition: transform 0.4s;
+}
+.btn:hover {
+  transform: scale(1.3);
+}
+#subscribe {
+  display: flex;
+}
+
+#home {
+  background-color: rgb(248, 217, 212);
+  min-height: 100vh;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 77rem) {
+  #img1 {
+    padding-top: 12rem;
+  }
+}
+#my-name {
+  text-align: center;
+  padding-left: 3%;
+}
+h1 {
+  font-size: 80px;
+  color: rgb(81, 75, 75);
+}
+h1 span {
+  color: rgb(165, 68, 68);
+}
+h3 {
+  font-size: 40px;
+  color: rgb(81, 75, 75);
+}
+#email {
+  position: relative;
+  padding-top: 26px;
+}
+#email input {
+  border: 2px solid rgb(165, 68, 68);
+  width: 75%;
+  padding: 14px 130px 14px 15px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px 0px;
+}
+#email button {
+  position: absolute;
+  right: 1.5%;
+  top: 30px;
+  bottom: 4px;
+  color: white;
+  background-color: rgb(165, 68, 68);
+  padding: 10px 30px 8px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  border-color: rgb(165, 68, 68);
+  box-shadow: 0px 0px 20px #858585;
+}
+#email button:hover {
+  transform: scale(1.3);
+  background-color: rgb(165, 68, 68);
+  color: white;
+}
+.fa-3x {
+  margin-top: 20px;
+  color: rgb(165, 68, 68);
+}
+
+#about {
+  background-color: rgb(240, 202, 197);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#about div {
+  width: 80vh;
+  text-align: justify;
+}
+#about h1,
+#about h5 {
+  text-align: center;
+  color: rgb(81, 75, 75);
+}
+#about h5 {
+  font-size: 2em;
+}
+#about p {
+  /* font-weight: bold; */
+  font-size: 1.5em;
+  text-indent: 40px;
+  padding-top: 30px;
+  color: rgb(165, 68, 68);
+}
+#button,
+#project-presentations button,
+#contact button {
+  background-color: rgb(165, 68, 68);
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: 0.4s;
+  margin-top: 20px;
+}
+#button:hover,
+#project-presentations button:hover,
+#contact button:hover {
+  background-color: transparent;
+  border: 2px solid rgb(165, 68, 68);
+  cursor: pointer;
+  color: rgb(81, 75, 75);
+}
+#about img {
+  height: 400px;
+}
+
+#projects {
+  background-color: rgb(248, 217, 212);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#project-presentations {
+  display: flex;
+  width: 1200px;
+}
+.work {
+  color: rgb(81, 75, 75);
+  background-color: rgb(231, 158, 138);
+  border-radius: 5%;
+  font-size: 1.4em;
+  font-weight: 100;
+  margin: 40px 15px 0px 0px;
+  width: 50vh;
+  padding: 1.5em;
+  text-align: justify;
+  text-indent: 20px;
+}
+.work h5 {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: larger;
+}
+#project-presentations button {
+  background-color: rgb(81, 75, 75);
+  margin-top: 10%;
+}
+
+#contact {
+  background-color: rgb(240, 202, 197);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#inputs {
+  display: flex;
+  flex-direction: column;
+}
+#contact input,
+#contact textarea {
+  width: 9rem;
+  padding: 14px 250px 14px 15px;
+  border: 2px solid rgb(165, 68, 68);
+  box-shadow: 0px 0px 10px 0px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+textarea {
+  height: 5rem;
+}
+#icons {
+  text-align: center;
+  padding-top: 20vh;
+}
+.ico {
+  color: rgb(165, 68, 68);
+  font-size: 60px;
+  padding: 10px;
+}
